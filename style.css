@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Noto+Sans+JP:wght@400;500&display=swap');
+
+/* ===== 全体設定 ===== */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #211a2b;
+  color: #fff;
+}
+
+/* ===== ヘッダー ===== */
+.header {
+  background-color: #a0a078;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5vw;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 24px;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #2c2c2c;
+}
+
+/* ===== 星空セクション ===== */
+.hero-section {
+  height: 100vh;
+  position: relative;
+  background-color: #211a2b;
+  overflow: hidden;
+}
+
+#stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== テキスト ===== */
+.hero-text {
+  position: absolute;
+  bottom: 80px;
+  right: 40px;
+  color: #ddd;
+  font-size: 18px;
+  text-align: right;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #211a2b;
+  color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.about-section {
+  text-align: center;
+  padding: 80px 0;
+}
+
+/* タイトル */
+.title {
+  font-family: 'Playfair Display', serif;
+  color: #c6c48c;
+  font-style: italic;
+  font-size: 28px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* タイトル下のライン */
+.line {
+  width: 300px;
+  height: 1px;
+  background-color: #c6c48c;
+  margin: 0 auto 60px auto;
+}
+
+/* メインレイアウト */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+/* プロフィール画像のプレースホルダー */
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url('back.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 右側情報 */
+.info {
+  text-align: left;
+  max-width: 400px;
+}
+
+.info-block {
+  margin-bottom: 40px;
+}
+
+.info-block h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* 日本語名 */
+.jp-name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* 英語名 */
+.en-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #cfcfcf;
+  margin-top: 4px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills-section {
+  background-color: #b9b98b;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.skills-section .title {
+  font-family: 'Playfair Display', serif;
+  color: #2e2b22;
+  font-style: italic;
+  font-size: 28px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.line.dark {
+  width: 300px;
+  height: 1px;
+  background-color: #3f3d2f;
+  margin: 0 auto 60px auto;
+}
+
+/* スキルカードのレイアウト */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 各スキルカード */
+.skill-card {
+  background-color: #c3c39a;
+  border-radius: 10px;
+  padding: 25px 0;
+  box-shadow: 0 4px 10px rgba(40, 40, 20, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* スター部分 */
+.stars {
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+}
+
+/* スキル名 */
+.skill-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #2c2c2c;
+}
+
+.skill-name span {
+  font-style: normal;
+  margin-right: 6px;
+  color: #3a3a3a;
+  font-weight: bold;
+}
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+  background-color: #211a2b;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 0 40px 0;
+}
+
+.footer-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* ソーシャルアイコン */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+/* コピーライト部分 */
+.footer-copy {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #cfcfcf;
+  margin-top: 10px;
+}
