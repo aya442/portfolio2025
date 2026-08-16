@@ -287,6 +287,11 @@ body {
   gap: 50px;
 }
 
+/* プロジェクトグリッド間の間隔 */
+.projects-grid + .projects-grid {
+  margin-top: 80px;
+}
+
 /* 各プロジェクトカード */
 .project-card {
   display: flex;
