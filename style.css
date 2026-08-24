@@ -410,12 +410,16 @@ body {
   .project-image {
     width: 100%;
     min-height: 220px;
-    background: linear-gradient(135deg, #2d2438, #3c3250);
+    background-color: #2d2438;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .project-info {
     width: 100%;
     padding: 28px 22px;
+    box-sizing: border-box;
     text-align: left;
   }
 
