@@ -449,3 +449,135 @@ body {
   color: #cfcfcf;
   margin-top: 10px;
 }
+
+/* ===== DESSIN SECTION ===== */
+.dessin-section {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 6vw 125px;
+  color: #302b26;
+  background-color: #e7e0d2;
+  background-image: radial-gradient(rgba(88, 71, 53, 0.12) 0.7px, transparent 0.7px);
+  background-size: 7px 7px;
+}
+
+.dessin-heading {
+  max-width: 900px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.dessin-section .title {
+  color: #302b26;
+  margin-top: 8px;
+}
+
+.dessin-section .line {
+  background-color: #302b26;
+  margin-bottom: 24px;
+}
+
+.section-kicker {
+  margin: 0;
+  color: #8b705b;
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.dessin-intro {
+  margin: 0;
+  color: #62584d;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.dessin-gallery {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  gap: 24px;
+  width: min(1120px, 88vw);
+  margin: 0 auto;
+  align-items: end;
+}
+
+.dessin-piece {
+  margin: 0;
+}
+
+.dessin-image {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background-color: #d4cabb;
+  box-shadow: 8px 10px 0 rgba(74, 61, 47, 0.13);
+}
+
+.dessin-piece-large .dessin-image {
+  aspect-ratio: 5 / 6;
+}
+
+.dessin-piece-landscape .dessin-image {
+  aspect-ratio: 3 / 2;
+}
+
+.dessin-image img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: rgba(74, 61, 47, 0.55);
+  border: 1px dashed rgba(74, 61, 47, 0.35);
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.dessin-piece figcaption {
+  padding: 15px 2px 0;
+  color: #4a4036;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.dessin-piece figcaption span {
+  margin-right: 12px;
+  color: #9b7d62;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+  }
+
+  .dessin-section {
+    padding: 85px 0 95px;
+  }
+
+  .dessin-gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .dessin-piece-large {
+    grid-column: 1 / -1;
+    width: 72%;
+    margin: 0 auto;
+  }
+}
