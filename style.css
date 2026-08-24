@@ -199,6 +199,16 @@ body {
   letter-spacing: 1px;
 }
 
+.section-intro {
+  margin: -35px auto 55px;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.skills-intro {
+  color: #4e4b35;
+}
+
 .line.dark {
   width: 300px;
   height: 1px;
@@ -275,6 +285,11 @@ body {
   height: 1px;
   background-color: #c6c48c;
   margin: 0 auto 60px auto;
+}
+
+.projects-intro {
+  margin-top: -35px;
+  color: #cfcfcf;
 }
 
 /* 全体レイアウト */
